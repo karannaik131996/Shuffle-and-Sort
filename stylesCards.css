@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(to right, rgba(133, 92, 231, 0),white) !important; */
+    
+}
+
+
+.card-parent-grid{
+    display: grid;
+    grid-template-rows: minmax(120px,auto) repeat(3, 100px);
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    width: 100%;
+    justify-content: right;
+    grid-row-gap: 0% !important ;
+}
+
+.main-parent{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    width: 100%;
+    background-color: grey;
+
+}
+
+.button-placement{
+    display: grid;
+     grid-template-rows: minmax(30px,auto) repeat(2, 37px);
+    justify-content: left;
+    align-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    width: 100%;
+    left: 10%;
+    top: -20%;
+    position: relative;
+
+}
+.card-piece{
+    background-color: red;
+    color:white;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+    padding: 50%;
+}
+
+.card-piece-blue{
+    background-color: #2B8EAD;
+}
+
+.card-1-8{
+    background-color: #2F454E;
+}
+
+.card-2-4{
+    background-color: #72C3DC;
+}
+
+.number-color{
+    color: #EFEFEF;
+}
+
+.card-3-5-9{
+    background-color: #333333;
+}
+
+.card-6-7{
+    background-color: #BFBFBF;
+}
+
+@media only screen and (max-width: 975px) {
+   
+    .card-parent-grid{
+        display: grid;
+        grid-template-rows: minmax(120px,auto) repeat(9, 100px);
+        grid-template-columns: repeat(1, 100px);
+        justify-content: center;
+        align-content: center;
+        min-height: 100vh;
+        padding: 10px;
+        grid-row-gap: 1% !important;
+    }
+
+    .card-piece{
+        justify-content: center;
+        align-content: center;
+        justify-content: center;
+        padding: 50%;
+        width: 120px;
+        border-left: 4px solid red;
+    }
+    .card-1-8{
+        border-left:4px solid #2F454E;
+    }
+  
+    .card-2-4{
+        border-left:4px solid #72C3DC;
+    }
+  
+    
+  
+    .card-3-5-9{
+       border-left:4px solid  #333333;
+    }
+  
+    .card-6-7{
+        border-left:4px solid #BFBFBF;
+    }
+
+    .card-color{
+        background-color: #FFFFFF;
+    }
+
+    .number-color{
+      color:   #000000;
+    }
+  }
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>SHUFFLE AND SORT</title>
+    <link href="stylesCards.css" rel="stylesheet" />
+    <script src="scripts.js" defer></script>
+  </head>
+
+  <body>
+    <div class="main-parent">
+
+      <div class="card-parent-grid" id="parent">
+        <div class="card-piece card-1-8 card-color number-color">1</div>
+        <div class="card-piece card-2-4 card-color number-color">2</div>
+        <div class="card-piece card-3-5-9 card-color number-color">3</div>
+        <div class="card-piece card-2-4 card-color number-color">4</div>
+        <div class="card-piece card-3-5-9 card-color number-color">5</div>
+        <div class="card-piece card-6-7 card-color number-color">6</div>
+        <div class="card-piece card-6-7 card-color number-color">7</div>
+        <div class="card-piece card-1-8 card-color number-color">8</div>
+        <div class="card-piece card-3-5-9 card-color number-color">9</div>
+      </div>
+      <div class = "button-placement">
+        <button class= "card-2-4" onclick="getShuffledArray([1,2,3,4,5,6,7,8,9])">SHUFFLE</button>
+        <button class= "card-2-4" onclick="getOrder([1,2,3,4,5,6,7,8,9]);">SORT</button>
+      </div>
+      
+    </div>
+  </body>
+</html>
